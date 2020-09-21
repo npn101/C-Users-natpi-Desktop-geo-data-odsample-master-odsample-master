@@ -1,1 +1,1 @@
-# C-Users-natpi-Desktop-geo-data-odsample-master-odsample-master
+#as application to run
