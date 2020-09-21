@@ -1,4 +1,4 @@
-#Mr. Siwakorn Prasertsingkul
+#Mr.Natpinai Phonngam
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -27,18 +27,18 @@ st.markdown(
     number, it'll show table for 2019/01/01 data as default
 """)
 
-df1 = pd.read_csv('https://raw.githubusercontent.com/SiwakornPr/Tracking/master/20190101.csv')
+df1 = pd.read_csv('https://raw.githubusercontent.com/npn101/HW_steamlit/master/20190101.csv')
 date = st.text_input(label='Date')
 if date == '' or '1':
     df = df1
 if date == '2':
-    df = pd.read_csv('https://raw.githubusercontent.com/SiwakornPr/Tracking/master/20190102.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/npn101/HW_steamlit/master/20190102.csv')
 if date == '3':
-    df = pd.read_csv('https://raw.githubusercontent.com/SiwakornPr/Tracking/master/20190103.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/npn101/HW_steamlit/master/20190103.csv')
 if date == '4':
-    df = pd.read_csv('https://raw.githubusercontent.com/SiwakornPr/Tracking/master/20190104.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/npn101/HW_steamlit/master/20190104.csv')
 if date =='5':
-    df = pd.read_csv('https://raw.githubusercontent.com/SiwakornPr/Tracking/master/20190105.csv')
+    df = pd.read_csv('https://raw.githubusercontent.com/npn101/HW_steamlit/master/20190105.csv')
 
 if st.checkbox("Show raw data", False):
     st.write(df)
